@@ -1,1 +1,36 @@
-<p>login works!</p>
+<div class="container is-flex is-justify-content-center is-align-items-center ">
+  <div class="box column is-one-third is-three-quarters-mobile is-two-thirds-tablet">
+    <h1 class="title has-text-centered">Iniciar Sessão</h1>
+
+    <div class="field">
+      <p class="control has-icons-left has-icons-right">
+        <input class="input" type="email" placeholder="Email">
+        <span class="icon is-small is-left">
+          <fa-icon [icon]="faEnvelope" class="no-hover"></fa-icon>
+        </span>
+      </p>
+    </div>
+    <div class="field">
+      <p class="control has-icons-left">
+        <input class="input" type="password" placeholder="Password">
+        <span class="icon is-small is-left">
+          <fa-icon [icon]="faLock"></fa-icon>
+        </span>
+      </p>
+    </div>
+    <!-- Forgot password link -->
+    <div class="field has-text-right mr-2">
+      <p class="control">
+        <a href="#" class="is-size-7 has-text-link">Esqueceu a palavra-passe?</a>
+      </p>
+    </div>
+
+    <div class="field has-text-centered">
+      <p class="control">
+        <input class="button is-primary mr-2" type="submit" value="Entrar"/>
+        <input class="button" type="reset" value="Cancelar" />
+      </p>
+    </div>
+  </div>
+</div>
+
