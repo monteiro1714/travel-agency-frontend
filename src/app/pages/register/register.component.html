@@ -1,1 +1,67 @@
-<p>register works!</p>
+<div class="container is-flex is-justify-content-center is-align-items-center">
+  <div class="box column is-one-third is-three-quarters-mobile is-two-thirds-tablet">
+    <h1 class="title has-text-centered">Criar Conta</h1>
+
+    <!-- Nome Completo -->
+    <div class="field">
+      <p class="control">
+        <input class="input" type="text" placeholder="Nome Completo" required>
+      </p>
+    </div>
+
+    <!-- Email -->
+    <div class="field">
+      <p class="control has-icons-left has-icons-right">
+        <input class="input" type="email" placeholder="Email" required>
+        <span class="icon is-small is-left">
+          <fa-icon [icon]="faEnvelope" class="no-hover"></fa-icon>
+        </span>
+      </p>
+    </div>
+
+    <!-- Senha -->
+    <div class="field">
+      <p class="control has-icons-left">
+        <input class="input" type="password" placeholder="Password" required>
+        <span class="icon is-small is-left">
+          <fa-icon [icon]="faLock"></fa-icon>
+        </span>
+      </p>
+    </div>
+
+    <!-- Confirmar Senha -->
+    <div class="field">
+      <p class="control has-icons-left">
+        <input class="input" type="password" placeholder="Confirmar Password" required>
+        <span class="icon is-small is-left">
+          <fa-icon [icon]="faLock"></fa-icon>
+        </span>
+      </p>
+    </div>
+
+    <!-- Aceitação de Termos e Condições -->
+    <div class="field">
+      <p class="control">
+        <label class="checkbox">
+          <input type="checkbox" required>
+          Aceito os <a href="#" class="has-text-link">Termos e Condições</a> e a <a href="#" class="has-text-link">Política de Privacidade</a>.
+        </label>
+      </p>
+    </div>
+
+    <!-- Botões -->
+    <div class="field has-text-centered">
+      <p class="control">
+        <input class="button is-primary mr-2" type="submit" value="Criar Conta"/>
+        <input class="button" type="reset" value="Cancelar" />
+      </p>
+    </div>
+
+    <!-- Link para login -->
+    <div class="field has-text-centered">
+      <p class="control">
+        <a routerLink="/login" class="is-size-7 has-text-link">Já tem uma conta? Inicie sessão</a>
+      </p>
+    </div>
+  </div>
+</div>
